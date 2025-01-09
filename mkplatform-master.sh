@@ -14,7 +14,7 @@ fi
 C=$(pwd)
 A=../../armbian-master
 P="nanopi${ver}-a"
-B="edge"
+B="current"
 T="nanopi${ver}"
 K="rockchip64"
 
