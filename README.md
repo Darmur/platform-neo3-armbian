@@ -1,2 +1,2 @@
 # platform-neo3-armbian
-Platform files for NanoPi NEO3 with Armbian kernel
+Volumio platform files for NanoPi NEO3 with Armbian kernel
