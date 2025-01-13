@@ -14,7 +14,7 @@ fi
 C=$(pwd)
 A=../../armbian-master
 P="nanopi${ver}-a"
-B="current"
+B="edge"
 T="nanopi${ver}"
 K="rockchip64"
 
@@ -24,7 +24,7 @@ ARMBIAN_VERSION=$(cat ${A}/VERSION)
 # Custom patches
 mkdir -p "${A}"/userpatches/kernel/"${K}"-"${B}"/
 rm -rf "${A}"/userpatches/kernel/"${K}"-"${B}"/*.patch
-if [ -e "${C}"/patches/*.patch ]
+if ls "${C}"/patches/*.patch &> /dev/null;
 then
   echo "Adding custom patches"
   ls "${C}/patches/"
